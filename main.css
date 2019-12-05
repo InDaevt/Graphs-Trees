@@ -1,0 +1,174 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 22, 2019, 12:03:57 PM
+    Author     : rogeliotayamora
+*/
+body {
+  width: 100%;
+  margin: 0;
+  padding:0;
+  font-family: 'Lato',sans-serif;
+  background-image: url("g-and-t-002-optimized.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.navbar {
+  overflow: hidden;
+    background-color: rgba(72,104,154,0.6);
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-table;
+    margin-top: 15px;
+    font-family: abril_fatfaceregular;
+}
+
+.navbar-right a {
+    float: right;
+    margin-top: 0px;
+}
+
+.navbar-logo {
+    float: left;
+    margin-right: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnav {
+    display: none;
+}
+
+.sidenav {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar{
+        display: none;
+    }
+    
+    .topnav {
+        display: block;
+        background-color: rgba(72,104,154,0.6);
+    }
+
+    .sidenav {
+        display: block;
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      font-family: abril_fatfaceregular;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 100%;
+      color: #333;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #818181;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    } 
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+      overflow: hidden;
+      color: white;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: right;
+      color: #333;
+      text-align: center;
+      padding: 0px 10px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 5%;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.9);
+    bottom: 0;
+    display: block;   
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #48689a;
+  border-radius: 50%;
+  display: inline-block;
+}
